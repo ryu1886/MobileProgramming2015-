@@ -5,16 +5,16 @@ interface Nose {
 }
 
 abstract class Picasso implements Nose {
-	/** **/
+	public int iMethod(){
 		return 7;
 	}
 }
 
-class Clowns extends /** **/ {
+class Clowns extends Picasso{
 }
 
 class Acts extends Picasso {
-	/** **/
+	public int iMethod(){
 		return 5;
 	}
 }
@@ -27,7 +27,7 @@ public class Of76 extends Clowns {
 		i[2] = new Of76();
 		
 		for (int x = 0; x < 3; x++) {
-			System.out.println(i[x].iMethod() + " " + i[x].getClass());
+			System.out.println(i[x].iMethod()  + " " + i[x].getClass());
 		}
 	}
 }
