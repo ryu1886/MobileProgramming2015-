@@ -19,10 +19,18 @@ public class ArrayListMagnet{
 	public static void main(String[] args){
 		
 		ArrayList<String> a= new ArrayList<String>();		
-		a.add(0, "zero");
+		try{a.add(0, "zero");
 		a.add(1, "one");
 	    a.add(2, "two");
 		a.add(3, "three");
+		a.add(5, "five");
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			System.out.println("Exception accured");
+		}
 		
 		printAL(a);
 		a.remove(2);
@@ -49,7 +57,6 @@ public class ArrayListMagnet{
 	}
 
 }
-
 
 
 
